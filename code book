@@ -1,0 +1,148 @@
+Code Book for Tidy Data produced for Getting and Cleaning Data (Coursera)
+Original Data procured from: 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Note: all initial data readings were collected at a constant rate of 50 Hz and filtered accordingly to
+      remove noise. Fields preceeded by a "t" pertain to time while fields precceded by an "f" pertain
+      to signals which had Fast Fourier Transform applied.
+
+Subject --- Study Participant number ranging from 1-30.
+Activity --- One of 6 possible choices: WALKING
+, WALKING_UPSTAIRS
+, WALKING_DOWNSTAIRS
+, SITTING
+,
+           STANDING
+, LAYING
+
+
+tBodyAcc-mean()-X --- aggregate mean of the readings of the subject doing the specified activity from the
+                      accelerometer in the X direction.
+tBodyAcc-mean()-Y --- aggregate mean of the readings of the subject doing the specified activity from the
+                      accelerometer in the Y direction.
+tBodyAcc-mean()-Z --- aggregate mean of the readings of the subject doing the specified activity from the
+                      accelerometer in the Z direction.
+tBodyAcc-std()-X --- aggregate mean of the readings of standard deviationthe subject doing the specified 
+                     activity from the accelerometer in the X direction.
+tBodyAcc-std()-Y --- aggregate mean of the readings of standard deviationthe subject doing the specified 
+                     activity from the accelerometer in the Y direction.
+tBodyAcc-std()-Z --- aggregate mean of the readings of standard deviationthe subject doing the specified 
+                     activity from the accelerometer in the Z direction.
+tGravityAcc-mean()-X --- aggregate mean of the readings of Gravity while the subject doing the specified 
+                     activity from the accelerometer in the X direction.
+tGravityAcc-mean()-Y --- aggregate mean of the readings of Gravity while the subject doing the specified 
+                     activity from the accelerometer in the Y direction.
+tGravityAcc-mean()-Z --- aggregate mean of the readings of Gravity while the subject doing the specified 
+                     activity from the accelerometer in the Z direction.
+tGravityAcc-std()-X --- aggregate mean of the SD of the readings of Gravity while the subject doing the specified 
+                     activity from the accelerometer in the X direction.
+tGravityAcc-std()-Y -- aggregate mean of the SD of the readings of Gravity while the subject doing the specified 
+                     activity from the accelerometer in the Y direction.
+tGravityAcc-std()-Z -- aggregate mean of the SD of the readings of Gravity while the subject doing the specified 
+                     activity from the accelerometer in the Z direction.
+tBodyAccJerk-mean()-X -- aggregate mean of the readings of JERK while the subject doing the specified 
+                     activity from the accelerometer in the X direction.
+tBodyAccJerk-mean()-Y -- aggregate mean of the readings of JERK while the subject doing the specified 
+                     activity from the accelerometer in the Y direction.
+tBodyAccJerk-mean()-Z -- aggregate mean of the readings of JERK while the subject doing the specified 
+                     activity from the accelerometer in the Z direction.
+tBodyAccJerk-std()-X -- aggregate mean of the SD of the readings of JERK while the subject doing the specified 
+                     activity from the accelerometer in the X direction.
+tBodyAccJerk-std()-Y -- aggregate mean of the SD of the readings of JERK while the subject doing the specified 
+                     activity from the accelerometer in the Y direction.
+tBodyAccJerk-std()-Z -- aggregate mean of the SD of the readings of JERK while the subject doing the specified 
+                     activity from the accelerometer in the Z direction.
+tBodyGyro-mean()-X -- aggregate mean  of the readings the subject doing the specified 
+                     activity from the gyroscope in the X direction.
+tBodyGyro-mean()-Y -- aggregate mean  of the readings the subject doing the specified 
+                     activity from the gyroscope in the Y direction.
+tBodyGyro-mean()-Z -- aggregate mean  of the readings ofthe subject doing the specified 
+                     activity from the gyroscope in the Z direction.
+tBodyGyro-std()-X -- aggregate mean  of the SD of readings the subject doing the specified 
+                     activity from the gyroscope in the X direction.
+tBodyGyro-std()-Y -- aggregate mean  of the SD of readings the subject doing the specified 
+                     activity from the gyroscope in the Y direction.
+tBodyGyro-std()-Z -- aggregate mean  of the SD of readings the subject doing the specified 
+                     activity from the gyroscope in the Z direction.
+tBodyGyroJerk-mean()-X -- aggregate mean  of the readings of JERK on the subject doing the specified 
+                     activity from the gyroscope in the X direction.
+tBodyGyroJerk-mean()-Y -- aggregate mean  of the readings of JERK on the subject doing the specified 
+                     activity from the gyroscope in the Y direction.
+tBodyGyroJerk-mean()-Z -- aggregate mean  of the readings of JERK on the subject doing the specified 
+                     activity from the gyroscope in the Z direction.
+tBodyGyroJerk-std()-X -- aggregate mean the SD of the readings of JERK on the subject doing the specified 
+                     activity from the gyroscope in the X direction.
+tBodyGyroJerk-std()-Y -- aggregate mean the SD of the readings of JERK on the subject doing the specified 
+                     activity from the gyroscope in the Y direction.
+tBodyGyroJerk-std()-Z -- aggregate mean the SD of the readings of JERK on the subject doing the specified 
+                     activity from the gyroscope in the Z direction.
+tBodyAccMag-mean() --- mean of the Body acceleration magnitude
+tBodyAccMag-std()  --- mean of SD of the Body acceleration magnitude
+tGravityAccMag-mean() --- mean of gravity acceleration magnitude
+tGravityAccMag-std() --- mean of SD of gravity acceleration magnitude
+tBodyAccJerkMag-mean() --- mean of the jerk associated with acceleration magnitude
+tBodyAccJerkMag-std() --- mean of the SD of the jerk associated with acceleration magnitude
+tBodyGyroMag-mean()  --- mean of the gyroscope magnitude
+tBodyGyroMag-std() --- mean of the SD of gyroscope magnitude
+tBodyGyroJerkMag-mean() --- mean of the jerk of the gyroscope magnitude
+tBodyGyroJerkMag-std() --- mean of the SD of the jerk of the gyroscope magnitude
+fBodyAcc-mean()-X --- aggregate mean of the readings of the subject doing the specified activity from the
+                      accelerometer in the X direction. (FFT applied)
+fBodyAcc-mean()-Y --- aggregate mean of the readings of the subject doing the specified activity from the
+                      accelerometer in the Y direction. (FFT applied)
+fBodyAcc-mean()-Z --- aggregate mean of the readings of the subject doing the specified activity from the
+                      accelerometer in the Z direction. (FFT applied)
+fBodyAcc-std()-X --- aggregate mean of the SD of the readings of the subject doing the specified activity from the
+                      accelerometer in the X direction. (FFT applied)
+fBodyAcc-std()-Y --- aggregate mean of the SD of the readings of the subject doing the specified activity from the
+                      accelerometer in the X direction. (FFT applied)
+fBodyAcc-std()-Z --- aggregate mean of the SD of the readings of the subject doing the specified activity from the
+                      accelerometer in the X direction. (FFT applied)
+fBodyAcc-meanFreq()-X --- mean of the frequency of the body accerleration in the x direction
+fBodyAcc-meanFreq()-Y --- mean of the frequency of the body accerleration in the y direction
+fBodyAcc-meanFreq()-Z --- mean of the frequency of the body accerleration in the z direction
+fBodyAccJerk-mean()-X --- aggregate mean of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the X direction. (FFT applied)
+fBodyAccJerk-mean()-Y --- aggregate mean of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the Y direction. (FFT applied)
+fBodyAccJerk-mean()-Z --- aggregate mean of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the Z direction. (FFT applied)
+fBodyAccJerk-std()-X --- aggregate mean of the SD of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the X direction. (FFT applied)
+fBodyAccJerk-std()-Y --- aggregate mean of the SD of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the Y direction. (FFT applied)
+fBodyAccJerk-std()-Z --- aggregate mean of the SD of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the Z direction. (FFT applied)
+fBodyAccJerk-meanFreq()-X --- aggregate mean of frequency of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the X direction. (FFT applied)
+fBodyAccJerk-meanFreq()-Y --- aggregate mean of frequency of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the Y direction. (FFT applied)
+fBodyAccJerk-meanFreq()-Z --- aggregate mean of frequency of the readings of the JERK of the subject doing the specified activity from the
+                      accelerometer in the Z direction. (FFT applied)
+fBodyGyro-mean()-X --- aggregate mean  of the readings the subject doing the specified 
+                     activity from the gyroscope in the X direction. (FFT applied)
+fBodyGyro-mean()-Y --- aggregate mean  of the readings the subject doing the specified 
+                     activity from the gyroscope in the Y direction. (FFT applied)
+fBodyGyro-mean()-Z --- aggregate mean  of the readings the subject doing the specified 
+                     activity from the gyroscope in the Z direction. (FFT applied)
+fBodyGyro-std()-X --- aggregate mean  of SD of the readings the subject doing the specified 
+                     activity from the gyroscope in the X direction. (FFT applied)
+fBodyGyro-std()-Y --- aggregate mean  of SD of the readings the subject doing the specified 
+                     activity from the gyroscope in the Y direction. (FFT applied)
+fBodyGyro-std()-Z --- aggregate mean  of SD of the readings the subject doing the specified 
+                     activity from the gyroscope in the Z direction. (FFT applied)
+fBodyGyro-meanFreq()-X --- mean of the frequency of the body accerleration in the x direction measure w/ gyroscope
+fBodyGyro-meanFreq()-Y --- mean of the frequency of the body accerleration in the y direction measure w/ gyroscope
+fBodyGyro-meanFreq()-Z --- mean of the frequency of the body accerleration in the z direction measure w/ gyroscope
+fBodyAccMag-mean() -- mean of the body acceration (FFT applied)
+fBodyAccMag-std() -- mean of the body acceration magnitude (FFT applied)
+fBodyAccMag-meanFreq() -- mean of frequency of the body acceration (FFT applied)
+fBodyBodyAccJerkMag-mean() -- mean of the body acceration jerk's magnitude (FFT applied)
+fBodyBodyAccJerkMag-std() -- mean of the SD of the body acceration jerk's magnitude (FFT applied)
+fBodyBodyAccJerkMag-meanFreq() --- mean of the body acceration jerk's magnitude mean frequency (FFT applied)
+fBodyBodyGyroMag-mean() -- mean of the body acceration measured with gyroscope (FFT applied)
+fBodyBodyGyroMag-std() --- mean of the STD  body gyroscope magnitude (FFT applied)
+fBodyBodyGyroMag-meanFreq() --- mean of the STD  body gyroscope frequency (FFT applied)
+fBodyBodyGyroJerkMag-mean() --- mean of  body gyroscope magnitude(FFT applied)
+fBodyBodyGyroJerkMag-std() mean of SD of body gyroscope magnitude(FFT applied)
+fBodyBodyGyroJerkMag-meanFreq() mean of  body gyroscope jerk(FFT applied)
